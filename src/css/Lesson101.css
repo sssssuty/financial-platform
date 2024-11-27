@@ -1,0 +1,31 @@
+.lesson-101 {
+    padding: 100px 40px;
+  }
+  
+  .lesson-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+  }
+  
+  .card h2 {
+    margin-bottom: 10px;
+  }
+  
+  .card button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  

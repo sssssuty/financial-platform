@@ -1,0 +1,35 @@
+.community {
+    padding: 100px 40px;
+  }
+  
+  .posts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .post {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  
+  .post img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  
+  .post-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .comments {
+    margin-top: 20px;
+  }
+  
+  .comments h4 {
+    margin-bottom: 10px;
+  }
+  
