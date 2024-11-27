@@ -32,7 +32,7 @@ const Community = () => {
 
   return (
     <div className="community">
-      <h1>Community</h1>
+      {/* <h1>Community</h1> */}
       <div className="posts">
         {posts.map((post) => (
           <div key={post.id} className="post">

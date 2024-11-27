@@ -10,7 +10,7 @@ const lessons = [
 const Lesson101 = () => {
   return (
     <div className="lesson-101">
-      <h1>Lesson 101</h1>
+      {/* <h1>Lesson 101</h1> */}
       <div className="lesson-cards">
         {lessons.map((lesson) => (
           <div key={lesson.id} className="card">
