@@ -1,41 +1,37 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import groupImage from "../images/group10.png";
 import "../css/LandingPage.css";
 
 const LandingPage = () => {
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
     <div className="landing-container">
-      <div className={`hero ${scrolled ? "scrolled" : ""}`}>
-        <h1>Welcome to Finance Buddy</h1>
-        <p>Your trusted platform for mastering personal finance</p>
+      <div className="grid-layout">
+        {/* Left Grid */}
+        <div className="left-grid">
+          <h1 className="tagline">Start your personal finance journey now.</h1>
+          <p className="subtext">
+            We help international students based in the U.S. to build their
+            finance by learning from each other.
+          </p>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLScjrfOQSI_NOZ4Hbxh51R36onE6uCQr7dd3vsG3KCgflgmiWw/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="join-waitlist-btn"
+          >
+            Join the Waitlist
+          </a>
+        </div>
+
+        {/* Right Grid */}
+        <div className="right-grid">
+          <img
+            src={groupImage}
+            alt="Finance Group"
+            className="landing-image"
+          />
+        </div>
       </div>
-      <section className="section">
-        <h2>Why Join Finance Buddy?</h2>
-        <p>Empowering financial literacy through community and education.</p>
-      </section>
-      <section className="section">
-        <h2>Explore Lessons</h2>
-        <p>Interactive content to help you learn and grow financially.</p>
-      </section>
-      <footer className="footer">
-        <p>&copy; {new Date().getFullYear()} Finance Buddy. All rights reserved.</p>
-      </footer>
     </div>
   );
 };

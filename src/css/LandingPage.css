@@ -1,41 +1,113 @@
+/* Landing Page Styling */
 .landing-container {
-    height: 100vh;
-    width: 100%;
-    overflow-x: hidden;
+  background-color: #efebd9;
+  height: calc(100vh - 70px); /* Full viewport height minus navbar height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+.grid-layout {
+  display: flex;
+  flex-direction: row; /* Default horizontal layout */
+  gap: 40px; /* Gap between left and right grids */
+  width: 100%;
+  max-width: 1400px; /* Set max width */
+  height: 100%; /* Full height layout */
+  align-items: center;
+  padding: 0 20px; /* Add padding for alignment */
+}
+
+.left-grid {
+  flex: 1; /* Equal space for left grid */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.tagline {
+  font-family: "Familjen Grotesk", sans-serif;
+  font-weight: 700;
+  font-size: 36px; /* Default font size */
+  margin-bottom: 20px;
+  color: black;
+  text-align: left;
+}
+
+.subtext {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: black;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.join-waitlist-btn {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.join-waitlist-btn:hover {
+  background-color: #333;
+}
+
+.right-grid {
+  flex: 1; /* Equal space for right grid */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-image {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  /* Mobile-specific styles */
+  .content-container {
+    padding-top: 100px; /* Add 100px padding on top */
   }
-  
-  .hero {
-    position: relative;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: url("https://via.placeholder.com/1920x1080") no-repeat center center/cover;
-    transition: background 0.5s ease-in-out;
+
+  .tagline {
+    font-size: 28px; /* Smaller font size for tagline */
   }
-  
-  .hero.scrolled {
-    background: url("https://via.placeholder.com/1920x1080/000") no-repeat center center/cover;
+
+  .subtext {
+    font-size: 16px; /* Smaller font size for subtext */
   }
-  
-  .section {
-    padding: 100px 40px;
-    text-align: center;
+
+  .grid-layout {
+    flex-direction: column; /* Stack grid items vertically */
+    gap: 20px; /* Reduce gap for stacked layout */
   }
-  
-  .parallax {
-    background: url("https://via.placeholder.com/1920x1080") no-repeat fixed center;
-    background-size: cover;
-    color: white;
-    padding: 100px 40px;
-    text-align: center;
+
+  .left-grid,
+  .right-grid {
+    flex: none;
+    width: 100%; /* Full width for mobile */
   }
-  
-  .footer {
-    background-color: black;
-    color: white;
-    padding: 20px;
-    text-align: center;
+
+  .landing-image {
+    width: 80%; /* Reduce image width for mobile */
   }
-  
+}
+
+@media (min-width: 1200px) {
+  /* Desktop-specific styles */
+  .tagline {
+    font-size: 48px; /* Larger font size for desktop */
+  }
+}
