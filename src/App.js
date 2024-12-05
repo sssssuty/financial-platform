@@ -5,7 +5,6 @@ import LandingPage from "./components/LandingPage";
 import Lesson101 from "./components/Lesson101";
 import Community from "./components/Community";
 import Analysis from "./components/Analysis";
-import "./App.css";
 
 function App() {
   return (
@@ -14,6 +13,8 @@ function App() {
       <div className="content-container">
         <Routes>
           <Route path="/" element={<LandingPage />} />
+          <Route path="/financial-platform" element={<LandingPage />} />
+          {/* Other routes */}
           <Route path="/lesson101" element={<Lesson101 />} />
           <Route path="/community" element={<Community />} />
           <Route path="/analysis" element={<Analysis />} />

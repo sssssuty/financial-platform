@@ -2,11 +2,11 @@
   display: flex;
   justify-content: space-between; /* Space between logo and CTA */
   align-items: center;
-  padding: 0 20px; /* Match the grid layout padding */
+  padding: 0 40px; /* Match the grid layout padding */
   background-color: #efebd9;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 97.5%;
   height: 70px; /* Set a consistent height */
   z-index: 100;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
@@ -42,4 +42,12 @@
 
 .join-waitlist-btn:hover {
   background-color: #333;
+}
+
+
+@media (max-width: 768px) {
+  .nav-bar {
+    width: 90%;
+    padding: 0 20px; /* Match the grid layout padding */
+  }
 }

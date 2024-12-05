@@ -1,7 +1,7 @@
 /* Landing Page Styling */
 .landing-container {
   background-color: #efebd9;
-  height: calc(100vh - 70px); /* Full viewport height minus navbar height */
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -79,6 +79,7 @@
   /* Mobile-specific styles */
   .content-container {
     padding-top: 100px; /* Add 100px padding on top */
+    background-color: #efebd9;
   }
 
   .tagline {
