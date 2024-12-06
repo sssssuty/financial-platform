@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/financial-platform/static/css/main.c70f79a0.css",
-    "main.js": "/financial-platform/static/js/main.d5fc63bc.js",
+    "main.js": "/financial-platform/static/js/main.e537303f.js",
     "static/js/453.8007b42a.chunk.js": "/financial-platform/static/js/453.8007b42a.chunk.js",
     "static/media/group10.png": "/financial-platform/static/media/group10.783c29b53b29df62c6da.png",
     "index.html": "/financial-platform/index.html",
     "main.c70f79a0.css.map": "/financial-platform/static/css/main.c70f79a0.css.map",
-    "main.d5fc63bc.js.map": "/financial-platform/static/js/main.d5fc63bc.js.map",
+    "main.e537303f.js.map": "/financial-platform/static/js/main.e537303f.js.map",
     "453.8007b42a.chunk.js.map": "/financial-platform/static/js/453.8007b42a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c70f79a0.css",
-    "static/js/main.d5fc63bc.js"
+    "static/js/main.e537303f.js"
   ]
 }
