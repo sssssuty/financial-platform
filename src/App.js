@@ -8,12 +8,11 @@ import Analysis from "./components/Analysis";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/financial-platform">
       <NavBar />
       <div className="content-container">
         <Routes>
           <Route path="/" element={<LandingPage />} />
-          <Route path="/financial-platform" element={<LandingPage />} />
           {/* Other routes */}
           <Route path="/lesson101" element={<Lesson101 />} />
           <Route path="/community" element={<Community />} />
