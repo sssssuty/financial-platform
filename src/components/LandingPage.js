@@ -8,10 +8,9 @@ const LandingPage = () => {
       <div className="grid-layout">
         {/* Left Grid */}
         <div className="left-grid">
-          <h1 className="tagline">Start your personal finance journey now.</h1>
+          <h1 className="tagline">Start Strong on Your Financial Journey in the U.S.</h1>
           <p className="subtext">
-            We help international students based in the U.S. to build their
-            finance by learning from each other.
+            Adapting to a new financial environment is less challenging by learning from each other.
           </p>
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLScjrfOQSI_NOZ4Hbxh51R36onE6uCQr7dd3vsG3KCgflgmiWw/viewform"
