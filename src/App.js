@@ -8,7 +8,7 @@ import Analysis from "./components/Analysis";
 
 function App() {
   return (
-    <Router basename="/financial-platform">
+    <Router>
       <NavBar />
       <div className="content-container">
         <Routes>
