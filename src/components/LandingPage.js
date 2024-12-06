@@ -10,7 +10,7 @@ const LandingPage = () => {
         <div className="left-grid">
           <h1 className="tagline">Start Strong on Your Financial Journey in the U.S.</h1>
           <p className="subtext">
-            Adapting to a new financial environment is less challenging by learning from each other.
+            Adapting to a new financial environment is less challenging if we learn from each other and support each other.
           </p>
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLScjrfOQSI_NOZ4Hbxh51R36onE6uCQr7dd3vsG3KCgflgmiWw/viewform"
